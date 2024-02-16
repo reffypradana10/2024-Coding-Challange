@@ -18,5 +18,7 @@
 //     .join("");
 
 // const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
-const DNAtoRNA = (dna) => dna.replaceAll("T", "U");
-console.log(DNAtoRNA("TTTT"));
+// const DNAtoRNA = (dna) => dna.replaceAll("T", "U");
+
+const DNAtoRNA = (dna) => dna.split("T").join("U");
+console.log(DNAtoRNA("SSSWET"));
